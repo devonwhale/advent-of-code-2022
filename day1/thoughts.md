@@ -1,0 +1,1 @@
+A fun one to start off with. I really butchered the first half as I misread the question and thought that it was asking for the number of the elf who had the most calories, not the number being carried. Once that clicked I made a small change to the code to get the correct value and did a much nicer refactor for the second part
