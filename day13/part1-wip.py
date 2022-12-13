@@ -13,7 +13,14 @@ def compare_arrays(first, second):
 
     debug_print(f'Compare {first_item} vs {second_item}')
   
-    return compare_items(first_item, second_item)
+    decision = compare_items(first_item, second_item)
+
+    if decision == 1:
+      return True
+    elif decision == 0:
+      return False
+
+  return -1
 
 def compare_items(first_item, second_item):
   if isinstance(first_item, list) and isinstance(second_item, list):
@@ -71,6 +78,7 @@ for round in range(1, int(len(input) / 3) + 1):
   debug_print(f'Compare {first_array} vs {second_array}')
   
   if compare_inputs(first_array, second_array):
+    print(round)
     score += round
 
 print(score)
